@@ -12,13 +12,13 @@
 - Windows: FFmpeg公式サイトからダウンロードし、パスを通します
 
 # Usage
-⦁	実行pyファイルと音声ファイル（例：sample.mp3）を同じディレクトリに置きます
-⦁	python app.py sample.mp3
-⦁	文字起こしされたtxtファイルが同ディレクトリに出力されます
+- 実行pyファイルと音声ファイル（例：sample.mp3）を同じディレクトリに置きます
+- python app.py sample.mp3
+- 文字起こしされたtxtファイルが同ディレクトリに出力されます
 
 # Supplement
-⦁	Whisperは日本語・英語を自動判別できますが、language="ja"やlanguage="en"で明示すると精度の上がる場合があります
-⦁	長時間音声の場合は "medium" や "large" モデルの使用を検討してください（要GPU）
+- Whisperは日本語・英語を自動判別できますが、language="ja"やlanguage="en"で明示すると精度の上がる場合があります
+- 長時間音声の場合は "medium" や "large" モデルの使用を検討してください（要GPU）
 
 # Other
 Whisperは内部的にWAV形式の音声データを扱いやすいため、
@@ -30,4 +30,5 @@ MP3やM4Aの圧縮形式をWAVに変換してから読み込みます
 
 - WhisperはMP3やM4Aを直接受け取っても動作します（必要：ffmpegのインストール）
   が、自前でWAVに変換することでエラーを減らし、処理を明示的に制御します
+
 
